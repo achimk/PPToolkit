@@ -1,0 +1,14 @@
+//
+// Prefix header for all source files of the 'PPToolkit' target in the 'PPToolkit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <CoreData/CoreData.h>
+
+    #import "PPLoadingContentProtocol.h"
+    #import "PPPageScrollViewProtocol.h"
+    #import "PPToolkitDefines.h"
+#endif

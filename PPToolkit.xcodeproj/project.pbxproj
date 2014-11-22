@@ -1,0 +1,1524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27280CAD1864EC660023E69A /* PPLoadingTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 27280CAB1864EC660023E69A /* PPLoadingTableViewController.h */; };
+		27280CAE1864EC660023E69A /* PPLoadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27280CAC1864EC660023E69A /* PPLoadingTableViewController.m */; };
+		27FF8093180957620090B81D /* PPDelegateInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FF8091180957620090B81D /* PPDelegateInterceptor.h */; };
+		27FF8094180957620090B81D /* PPDelegateInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FF8092180957620090B81D /* PPDelegateInterceptor.m */; };
+		520C4AE8174F43AC0042D54B /* PPTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 520C4AE6174F43AC0042D54B /* PPTableView.h */; };
+		520C4AE9174F43AC0042D54B /* PPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C4AE7174F43AC0042D54B /* PPTableView.m */; };
+		521000DF16E4817D0036FA3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521000DE16E4817D0036FA3B /* UIKit.framework */; };
+		521000E116E481850036FA3B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521000E016E481850036FA3B /* CoreData.framework */; };
+		521000E316E4819C0036FA3B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521000E216E4819C0036FA3B /* QuartzCore.framework */; };
+		521000F016E4852D0036FA3B /* PPLoadingContentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC06C16E396B600ECC76B /* PPLoadingContentProtocol.h */; settings = {ATTRIBUTES = (); }; };
+		521000F316E4853C0036FA3B /* PPViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC05A16E38C8300ECC76B /* PPViewController.h */; settings = {ATTRIBUTES = (); }; };
+		521000F516E485450036FA3B /* PPTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC05D16E38CAD00ECC76B /* PPTableViewController.h */; settings = {ATTRIBUTES = (); }; };
+		521000FC16E485690036FA3B /* PPLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC06816E3954B00ECC76B /* PPLoadingView.h */; settings = {ATTRIBUTES = (); }; };
+		521000FE16E485740036FA3B /* PPTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC06216E3907F00ECC76B /* PPTableViewCell.h */; settings = {ATTRIBUTES = (); }; };
+		5210010116E485A50036FA3B /* PPDrawingUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC07A16E3B7BB00ECC76B /* PPDrawingUtilities.h */; settings = {ATTRIBUTES = (); }; };
+		5210010516E485C10036FA3B /* PPToolkitDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC06E16E3A09800ECC76B /* PPToolkitDefines.h */; settings = {ATTRIBUTES = (); }; };
+		5210010716E485DD0036FA3B /* PPToolkit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC04E16E389B400ECC76B /* PPToolkit-Prefix.pch */; settings = {ATTRIBUTES = (); }; };
+		5210010B16E497A30036FA3B /* PPToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC04F16E389B400ECC76B /* PPToolkit.h */; };
+		5210010C16E497A70036FA3B /* PPCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC09616E401C500ECC76B /* PPCategories.h */; };
+		52147EB617044C3500796A3D /* PPKeyboardViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52147EB417044C3500796A3D /* PPKeyboardViewController.h */; };
+		52147EB717044C3500796A3D /* PPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52147EB517044C3500796A3D /* PPKeyboardViewController.m */; };
+		522666CC170ACFF100DA86C3 /* PPManagedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 522666CA170ACFF100DA86C3 /* PPManagedViewController.h */; };
+		522666CD170ACFF100DA86C3 /* PPManagedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522666CB170ACFF100DA86C3 /* PPManagedViewController.m */; };
+		522666D0170AD20C00DA86C3 /* PPManagedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 522666CE170AD20C00DA86C3 /* PPManagedTableViewController.h */; };
+		522666D1170AD20C00DA86C3 /* PPManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522666CF170AD20C00DA86C3 /* PPManagedTableViewController.m */; };
+		5226A99416E8784500986AE1 /* UIColor+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5226A99216E8784500986AE1 /* UIColor+PPToolkitAdditions.h */; };
+		5226A99516E8784500986AE1 /* UIColor+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226A99316E8784500986AE1 /* UIColor+PPToolkitAdditions.m */; };
+		522E8C1F17057D9F00397F34 /* PPManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 522E8C1D17057D9F00397F34 /* PPManagedObject.h */; };
+		522E8C2017057D9F00397F34 /* PPManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E8C1E17057D9F00397F34 /* PPManagedObject.m */; };
+		522E8C2317057DB600397F34 /* PPRemoteManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 522E8C2117057DB600397F34 /* PPRemoteManagedObject.h */; };
+		522E8C2417057DB600397F34 /* PPRemoteManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E8C2217057DB600397F34 /* PPRemoteManagedObject.m */; };
+		52410E791754C3E900BCF5C6 /* PPLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABC07516E3AE7F00ECC76B /* PPLoadingTableViewCell.m */; };
+		527CCCA5174E078E0018136A /* PPCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 527CCCA3174E078E0018136A /* PPCollectionViewController.h */; };
+		527CCCA6174E078E0018136A /* PPCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527CCCA4174E078E0018136A /* PPCollectionViewController.m */; };
+		527CCCA9174E07AA0018136A /* PPManagedCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 527CCCA7174E07A90018136A /* PPManagedCollectionViewController.h */; };
+		527CCCAA174E07AA0018136A /* PPManagedCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527CCCA8174E07A90018136A /* PPManagedCollectionViewController.m */; };
+		527CCCAE174E0AD00018136A /* PPCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 527CCCAC174E0AD00018136A /* PPCollectionViewCell.h */; };
+		527CCCAF174E0AD00018136A /* PPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527CCCAD174E0AD00018136A /* PPCollectionViewCell.m */; };
+		52CB1B3416F9FA3D00A33A1A /* PPTouchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CB1B3216F9FA3C00A33A1A /* PPTouchView.h */; };
+		52CB1B3516F9FA3D00A33A1A /* PPTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB1B3316F9FA3C00A33A1A /* PPTouchView.m */; };
+		98024C5817F2F62E0047535F /* NSString+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98024C5617F2F62E0047535F /* NSString+PPToolkitAdditions.h */; };
+		98024C5917F2F62E0047535F /* NSString+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98024C5717F2F62E0047535F /* NSString+PPToolkitAdditions.m */; };
+		98080DFB18322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98080DF918322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.h */; };
+		98080DFC18322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98080DFA18322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.m */; };
+		980A2A54181AA47500D030A0 /* PPObjectInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 980A2A52181AA47500D030A0 /* PPObjectInterceptor.h */; };
+		980A2A55181AA47500D030A0 /* PPObjectInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 980A2A53181AA47500D030A0 /* PPObjectInterceptor.m */; };
+		9811516E17E852CC00E490D0 /* PPDelegateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9811516C17E852CC00E490D0 /* PPDelegateManager.h */; };
+		9811516F17E852CC00E490D0 /* PPDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9811516D17E852CC00E490D0 /* PPDelegateManager.m */; };
+		9821CEE217E1A396009E6E2F /* PPLoadingCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9821CEE017E1A396009E6E2F /* PPLoadingCollectionViewCell.h */; };
+		9821CEE317E1A396009E6E2F /* PPLoadingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9821CEE117E1A396009E6E2F /* PPLoadingCollectionViewCell.m */; };
+		9821CEE717E1AB3A009E6E2F /* PPCollectionCellBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9821CEE517E1AB3A009E6E2F /* PPCollectionCellBackgroundView.h */; };
+		9821CEE817E1AB3A009E6E2F /* PPCollectionCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9821CEE617E1AB3A009E6E2F /* PPCollectionCellBackgroundView.m */; };
+		9823AEBF170F8E080064283D /* UIView+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9823AEBD170F8E080064283D /* UIView+PPToolkitAdditions.h */; };
+		9823AEC0170F8E080064283D /* UIView+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9823AEBE170F8E080064283D /* UIView+PPToolkitAdditions.m */; };
+		982B6C6716E9453200DCB343 /* NSDictionary+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 982B6C6516E9453200DCB343 /* NSDictionary+PPToolkitAdditions.h */; };
+		982B6C6816E9453200DCB343 /* NSDictionary+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 982B6C6616E9453200DCB343 /* NSDictionary+PPToolkitAdditions.m */; };
+		983FC3391861C74400299DF9 /* CAAnimation+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 983FC3371861C74400299DF9 /* CAAnimation+PPToolkitAdditions.h */; };
+		983FC33A1861C74400299DF9 /* CAAnimation+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 983FC3381861C74400299DF9 /* CAAnimation+PPToolkitAdditions.m */; };
+		9854646C188C4D2900F76523 /* FCYAssertHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 98546469188C4D2900F76523 /* FCYAssertHandler.h */; };
+		9854646D188C4D2900F76523 /* FCYAssertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854646A188C4D2900F76523 /* FCYAssertHandler.m */; };
+		9854646E188C4D2900F76523 /* FCYAsserts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9854646B188C4D2900F76523 /* FCYAsserts.h */; };
+		98546EB41851BE5D008F127A /* NSData+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98546EB21851BE5D008F127A /* NSData+PPToolkitAdditions.h */; };
+		98546EB51851BE5D008F127A /* NSData+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98546EB31851BE5D008F127A /* NSData+PPToolkitAdditions.m */; };
+		98546EB81851BECA008F127A /* NSArray+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98546EB61851BECA008F127A /* NSArray+PPToolkitAdditions.h */; };
+		98546EB91851BECA008F127A /* NSArray+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98546EB71851BECA008F127A /* NSArray+PPToolkitAdditions.m */; };
+		9856D54318605BDC005A9F93 /* PPStateMachineViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9856D54118605BDC005A9F93 /* PPStateMachineViewController.h */; };
+		9856D54418605BDC005A9F93 /* PPStateMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9856D54218605BDC005A9F93 /* PPStateMachineViewController.m */; };
+		98594EB5177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594E99177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.h */; };
+		98594EB6177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594E9A177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.m */; };
+		98594EB7177F1C670080CCEA /* PSTCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594E9B177F1C670080CCEA /* PSTCollectionView.h */; };
+		98594EB8177F1C670080CCEA /* PSTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594E9C177F1C670080CCEA /* PSTCollectionView.m */; };
+		98594EB9177F1C670080CCEA /* PSTCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594E9D177F1C670080CCEA /* PSTCollectionViewCell.h */; };
+		98594EBA177F1C670080CCEA /* PSTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594E9E177F1C670080CCEA /* PSTCollectionViewCell.m */; };
+		98594EBB177F1C670080CCEA /* PSTCollectionViewCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594E9F177F1C670080CCEA /* PSTCollectionViewCommon.h */; };
+		98594EBC177F1C670080CCEA /* PSTCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EA0177F1C670080CCEA /* PSTCollectionViewController.h */; };
+		98594EBD177F1C670080CCEA /* PSTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EA1177F1C670080CCEA /* PSTCollectionViewController.m */; };
+		98594EBE177F1C670080CCEA /* PSTCollectionViewData.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EA2177F1C670080CCEA /* PSTCollectionViewData.h */; };
+		98594EBF177F1C670080CCEA /* PSTCollectionViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EA3177F1C670080CCEA /* PSTCollectionViewData.m */; };
+		98594EC0177F1C670080CCEA /* PSTCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EA4177F1C670080CCEA /* PSTCollectionViewFlowLayout.h */; };
+		98594EC1177F1C670080CCEA /* PSTCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EA5177F1C670080CCEA /* PSTCollectionViewFlowLayout.m */; };
+		98594EC2177F1C670080CCEA /* PSTCollectionViewItemKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EA6177F1C670080CCEA /* PSTCollectionViewItemKey.h */; };
+		98594EC3177F1C670080CCEA /* PSTCollectionViewItemKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EA7177F1C670080CCEA /* PSTCollectionViewItemKey.m */; };
+		98594EC4177F1C670080CCEA /* PSTCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EA8177F1C670080CCEA /* PSTCollectionViewLayout.h */; };
+		98594EC5177F1C670080CCEA /* PSTCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EA9177F1C670080CCEA /* PSTCollectionViewLayout.m */; };
+		98594EC6177F1C670080CCEA /* PSTCollectionViewLayout+Internals.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EAA177F1C670080CCEA /* PSTCollectionViewLayout+Internals.h */; };
+		98594EC7177F1C670080CCEA /* PSTCollectionViewUpdateItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EAB177F1C670080CCEA /* PSTCollectionViewUpdateItem.h */; };
+		98594EC8177F1C670080CCEA /* PSTCollectionViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EAC177F1C670080CCEA /* PSTCollectionViewUpdateItem.m */; };
+		98594EC9177F1C670080CCEA /* PSTGridLayoutInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EAD177F1C670080CCEA /* PSTGridLayoutInfo.h */; };
+		98594ECA177F1C670080CCEA /* PSTGridLayoutInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EAE177F1C670080CCEA /* PSTGridLayoutInfo.m */; };
+		98594ECB177F1C670080CCEA /* PSTGridLayoutItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EAF177F1C670080CCEA /* PSTGridLayoutItem.h */; };
+		98594ECC177F1C670080CCEA /* PSTGridLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EB0177F1C670080CCEA /* PSTGridLayoutItem.m */; };
+		98594ECD177F1C670080CCEA /* PSTGridLayoutRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EB1177F1C670080CCEA /* PSTGridLayoutRow.h */; };
+		98594ECE177F1C670080CCEA /* PSTGridLayoutRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EB2177F1C670080CCEA /* PSTGridLayoutRow.m */; };
+		98594ECF177F1C670080CCEA /* PSTGridLayoutSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 98594EB3177F1C670080CCEA /* PSTGridLayoutSection.h */; };
+		98594ED0177F1C670080CCEA /* PSTGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 98594EB4177F1C670080CCEA /* PSTGridLayoutSection.m */; };
+		986008D0181720F900A0FD82 /* PPDefaultTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 986008CE181720F900A0FD82 /* PPDefaultTableViewCell.h */; };
+		986008D1181720F900A0FD82 /* PPDefaultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 986008CF181720F900A0FD82 /* PPDefaultTableViewCell.m */; };
+		9860F3D516E69D23000797A3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9860F3D416E69D23000797A3 /* CoreFoundation.framework */; };
+		9860F3DB16E69D23000797A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9860F3D916E69D23000797A3 /* InfoPlist.strings */; };
+		9860F3EA16E69DEA000797A3 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9860F3E216E69DEA000797A3 /* blackArrow.png */; };
+		9860F3EB16E69DEA000797A3 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9860F3E316E69DEA000797A3 /* blackArrow@2x.png */; };
+		9860F3EC16E69DEA000797A3 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9860F3E416E69DEA000797A3 /* blueArrow.png */; };
+		9860F3ED16E69DEA000797A3 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9860F3E516E69DEA000797A3 /* blueArrow@2x.png */; };
+		9860F3EE16E69DEA000797A3 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9860F3E616E69DEA000797A3 /* grayArrow.png */; };
+		9860F3EF16E69DEA000797A3 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9860F3E716E69DEA000797A3 /* grayArrow@2x.png */; };
+		9860F3F016E69DEA000797A3 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9860F3E816E69DEA000797A3 /* whiteArrow.png */; };
+		9860F3F116E69DEA000797A3 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9860F3E916E69DEA000797A3 /* whiteArrow@2x.png */; };
+		9860F3F516E69E64000797A3 /* UIImage+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9860F3F316E69E64000797A3 /* UIImage+PPToolkitAdditions.h */; };
+		9860F3F616E69E64000797A3 /* UIImage+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9860F3F416E69E64000797A3 /* UIImage+PPToolkitAdditions.m */; };
+		9860F3F916E6A146000797A3 /* NSBundle+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9860F3F716E6A146000797A3 /* NSBundle+PPToolkitAdditions.h */; };
+		9860F3FA16E6A146000797A3 /* NSBundle+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9860F3F816E6A146000797A3 /* NSBundle+PPToolkitAdditions.m */; };
+		9866C0B016F66BDE00A0022A /* PPPageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9866C0AE16F66BDE00A0022A /* PPPageScrollView.h */; };
+		9866C0B116F66BDE00A0022A /* PPPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9866C0AF16F66BDE00A0022A /* PPPageScrollView.m */; };
+		9866C0B416F66BF900A0022A /* PPPageScrollViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9866C0B216F66BF900A0022A /* PPPageScrollViewCell.h */; };
+		9866C0B516F66BF900A0022A /* PPPageScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9866C0B316F66BF900A0022A /* PPPageScrollViewCell.m */; };
+		9868473B1863263400DFEFAC /* PPSemiSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = 986847371863263400DFEFAC /* PPSemiSheetController.h */; };
+		9868473C1863263400DFEFAC /* PPSemiSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986847381863263400DFEFAC /* PPSemiSheetController.m */; };
+		9868473D1863263400DFEFAC /* PPSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = 986847391863263400DFEFAC /* PPSheetController.h */; };
+		9868473E1863263400DFEFAC /* PPSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868473A1863263400DFEFAC /* PPSheetController.m */; };
+		9868474E1863352300DFEFAC /* PPGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9868474C1863352300DFEFAC /* PPGradientView.h */; };
+		9868474F1863352300DFEFAC /* PPGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868474D1863352300DFEFAC /* PPGradientView.m */; };
+		9868475218633BF800DFEFAC /* PPGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9868475018633BF800DFEFAC /* PPGradientLayer.h */; };
+		9868475318633BF800DFEFAC /* PPGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868475118633BF800DFEFAC /* PPGradientLayer.m */; };
+		986A090F1812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 986A090D1812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.h */; };
+		986A09101812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 986A090E1812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.m */; };
+		986A09131812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 986A09111812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.h */; };
+		986A09141812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 986A09121812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.m */; };
+		986A09171812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 986A09151812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.h */; };
+		986A09181812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 986A09161812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.m */; };
+		986B04971802C4D600B17F36 /* PPNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 986B04951802C4D600B17F36 /* PPNavigationController.h */; };
+		986B04981802C4D600B17F36 /* PPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986B04961802C4D600B17F36 /* PPNavigationController.m */; };
+		986B4EBF17882FC00088AD82 /* PPTableCellBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 986B4EBD17882FC00088AD82 /* PPTableCellBackgroundView.h */; };
+		986B4EC017882FC00088AD82 /* PPTableCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 986B4EBE17882FC00088AD82 /* PPTableCellBackgroundView.m */; };
+		986B4EC1178839360088AD82 /* PPLoadingTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ABC07416E3AE7F00ECC76B /* PPLoadingTableViewCell.h */; };
+		986B4EC517884AAF0088AD82 /* PPRightDetailTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 986B4EC317884AAC0088AD82 /* PPRightDetailTableViewCell.h */; };
+		986B4EC617884AAF0088AD82 /* PPRightDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 986B4EC417884AAD0088AD82 /* PPRightDetailTableViewCell.m */; };
+		986B4EC917884ACE0088AD82 /* PPSubtitleDetailTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 986B4EC717884ACB0088AD82 /* PPSubtitleDetailTableViewCell.h */; };
+		986B4ECA17884ACE0088AD82 /* PPSubtitleDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 986B4EC817884ACC0088AD82 /* PPSubtitleDetailTableViewCell.m */; };
+		98703F3618703C4700244A93 /* PPLoadingCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98703F3418703C4700244A93 /* PPLoadingCollectionViewController.h */; };
+		98703F3718703C4700244A93 /* PPLoadingCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98703F3518703C4700244A93 /* PPLoadingCollectionViewController.m */; };
+		98703F3A18703C6F00244A93 /* PPManagedLoadingCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98703F3818703C6F00244A93 /* PPManagedLoadingCollectionViewController.h */; };
+		98703F3B18703C6F00244A93 /* PPManagedLoadingCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98703F3918703C6F00244A93 /* PPManagedLoadingCollectionViewController.m */; };
+		9871800C180EC50100BCE59B /* PPTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9871800A180EC50100BCE59B /* PPTimer.h */; };
+		9871800D180EC50100BCE59B /* PPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871800B180EC50100BCE59B /* PPTimer.m */; };
+		98718010180EC52100BCE59B /* PPGCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9871800E180EC52100BCE59B /* PPGCDTimer.h */; };
+		98718011180EC52100BCE59B /* PPGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871800F180EC52100BCE59B /* PPGCDTimer.m */; };
+		9876B27C1868E0390007D423 /* PPManagedLoadingTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9876B27A1868E0390007D423 /* PPManagedLoadingTableViewController.h */; };
+		9876B27D1868E0390007D423 /* PPManagedLoadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9876B27B1868E0390007D423 /* PPManagedLoadingTableViewController.m */; };
+		987832D217A31BD900C863DF /* UIViewController+PPToolkitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 987832D017A31BD900C863DF /* UIViewController+PPToolkitExtensions.h */; };
+		987832D317A31BD900C863DF /* UIViewController+PPToolkitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 987832D117A31BD900C863DF /* UIViewController+PPToolkitExtensions.m */; };
+		987832D717A31CBA00C863DF /* PPRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 987832D517A31CBA00C863DF /* PPRuntime.h */; };
+		987832D817A31CBA00C863DF /* PPRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 987832D617A31CBA00C863DF /* PPRuntime.m */; };
+		987832DB17A31D7200C863DF /* UINavigationController+PPToolkitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 987832D917A31D7200C863DF /* UINavigationController+PPToolkitExtensions.h */; };
+		987832DC17A31D7200C863DF /* UINavigationController+PPToolkitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 987832DA17A31D7200C863DF /* UINavigationController+PPToolkitExtensions.m */; };
+		987832DF17A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 987832DD17A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.h */; };
+		987832E017A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 987832DE17A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.m */; };
+		987832E317A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 987832E117A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.h */; };
+		987832E417A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 987832E217A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.m */; };
+		987832E717A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 987832E517A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.h */; };
+		987832E817A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 987832E617A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.m */; };
+		98883BD016F68C7300AA0E1D /* PPPageScrollViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9866C0B616F66C1B00A0022A /* PPPageScrollViewProtocol.h */; };
+		98A982BA1859E0D800EC8CAA /* PPStateMachineOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A982B81859E0D800EC8CAA /* PPStateMachineOperation.h */; };
+		98A982BB1859E0D800EC8CAA /* PPStateMachineOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A982B91859E0D800EC8CAA /* PPStateMachineOperation.m */; };
+		98A982BF1859E17F00EC8CAA /* PPCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A982BD1859E17F00EC8CAA /* PPCache.h */; };
+		98A982C01859E17F00EC8CAA /* PPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A982BE1859E17F00EC8CAA /* PPCache.m */; };
+		98A982C41859E93800EC8CAA /* PPSynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A982C31859E93800EC8CAA /* PPSynthesizeSingleton.h */; };
+		98ABC04B16E389B300ECC76B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ABC04A16E389B300ECC76B /* Foundation.framework */; };
+		98ABC05C16E38C8300ECC76B /* PPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABC05B16E38C8300ECC76B /* PPViewController.m */; };
+		98ABC05F16E38CAD00ECC76B /* PPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABC05E16E38CAD00ECC76B /* PPTableViewController.m */; };
+		98ABC06616E3907F00ECC76B /* PPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABC06316E3907F00ECC76B /* PPTableViewCell.m */; };
+		98ABC06A16E3954B00ECC76B /* PPLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABC06916E3954B00ECC76B /* PPLoadingView.m */; };
+		98ABC07016E3A09800ECC76B /* PPToolkitDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABC06F16E3A09800ECC76B /* PPToolkitDefines.m */; };
+		98ABC07C16E3B7BB00ECC76B /* PPDrawingUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABC07B16E3B7BB00ECC76B /* PPDrawingUtilities.m */; };
+		98AD758D17F97F50002F58AD /* PPOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD758B17F97F50002F58AD /* PPOperationQueue.h */; };
+		98AD758E17F97F50002F58AD /* PPOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD758C17F97F50002F58AD /* PPOperationQueue.m */; };
+		98AD759B17F97F6A002F58AD /* PPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD758F17F97F6A002F58AD /* PPOperation.h */; };
+		98AD759C17F97F6A002F58AD /* PPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD759017F97F6A002F58AD /* PPOperation.m */; };
+		98AD759D17F97F6A002F58AD /* PPKVOOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD759117F97F6A002F58AD /* PPKVOOperation.h */; };
+		98AD759E17F97F6A002F58AD /* PPKVOOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD759217F97F6A002F58AD /* PPKVOOperation.m */; };
+		98AD759F17F97F6A002F58AD /* PPDispatchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD759317F97F6A002F58AD /* PPDispatchOperation.h */; };
+		98AD75A017F97F6A002F58AD /* PPDispatchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD759417F97F6A002F58AD /* PPDispatchOperation.m */; };
+		98AD75A117F97F6A002F58AD /* PPGroupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD759517F97F6A002F58AD /* PPGroupOperation.h */; };
+		98AD75A217F97F6A002F58AD /* PPGroupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD759617F97F6A002F58AD /* PPGroupOperation.m */; };
+		98AD75A317F97F6A002F58AD /* PPKVOGroupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD759717F97F6A002F58AD /* PPKVOGroupOperation.h */; };
+		98AD75A417F97F6A002F58AD /* PPKVOGroupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD759817F97F6A002F58AD /* PPKVOGroupOperation.m */; };
+		98AD75A517F97F6A002F58AD /* PPDispatchGroupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD759917F97F6A002F58AD /* PPDispatchGroupOperation.h */; };
+		98AD75A617F97F6A002F58AD /* PPDispatchGroupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD759A17F97F6A002F58AD /* PPDispatchGroupOperation.m */; };
+		98AD75AB17F97F7B002F58AD /* PPProgressObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD75A717F97F7B002F58AD /* PPProgressObserver.h */; };
+		98AD75AC17F97F7B002F58AD /* PPProgressObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD75A817F97F7B002F58AD /* PPProgressObserver.m */; };
+		98AD75AD17F97F7B002F58AD /* PPOperationStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD75A917F97F7B002F58AD /* PPOperationStateMachine.h */; };
+		98AD75AE17F97F7B002F58AD /* PPOperationStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD75AA17F97F7B002F58AD /* PPOperationStateMachine.m */; };
+		98AD75C617F98146002F58AD /* TKEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD75BF17F98146002F58AD /* TKEvent.h */; };
+		98AD75C717F98146002F58AD /* TKEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD75C017F98146002F58AD /* TKEvent.m */; };
+		98AD75C817F98146002F58AD /* TKState.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD75C117F98146002F58AD /* TKState.h */; };
+		98AD75C917F98146002F58AD /* TKState.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD75C217F98146002F58AD /* TKState.m */; };
+		98AD75CA17F98146002F58AD /* TKStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD75C317F98146002F58AD /* TKStateMachine.h */; };
+		98AD75CB17F98146002F58AD /* TKStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD75C417F98146002F58AD /* TKStateMachine.m */; };
+		98AD75CC17F98146002F58AD /* TransitionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AD75C517F98146002F58AD /* TransitionKit.h */; };
+		98C335B0183E2916001D5F37 /* PPCoreDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C335AE183E2916001D5F37 /* PPCoreDataStore.h */; };
+		98C335B1183E2916001D5F37 /* PPCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C335AF183E2916001D5F37 /* PPCoreDataStore.m */; };
+		98C335BB183E3CEE001D5F37 /* PPManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C335B9183E3CEE001D5F37 /* PPManagedObjectContext.h */; };
+		98C335BC183E3CEE001D5F37 /* PPManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C335BA183E3CEE001D5F37 /* PPManagedObjectContext.m */; };
+		98D6EF1116F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D6EF0F16F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.h */; };
+		98D6EF1216F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D6EF1016F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.m */; };
+		98D6EF2316F52C8E00F34BD4 /* PPButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D6EF2116F52C8E00F34BD4 /* PPButton.h */; };
+		98D6EF2416F52C8E00F34BD4 /* PPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D6EF2216F52C8E00F34BD4 /* PPButton.m */; };
+		98D6EF2716F52E0F00F34BD4 /* PPTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D6EF2516F52E0F00F34BD4 /* PPTextField.h */; };
+		98D6EF2816F52E0F00F34BD4 /* PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D6EF2616F52E0F00F34BD4 /* PPTextField.m */; };
+		98E5434617DDDA93008E0DB6 /* PPAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E5434417DDDA93008E0DB6 /* PPAccessoryView.h */; };
+		98E5434717DDDA93008E0DB6 /* PPAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E5434517DDDA93008E0DB6 /* PPAccessoryView.m */; };
+		98FEEC741875F3F600F0F9DA /* PPSegmentedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FEEC701875F3F600F0F9DA /* PPSegmentedViewController.h */; };
+		98FEEC751875F3F600F0F9DA /* PPSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FEEC711875F3F600F0F9DA /* PPSegmentedViewController.m */; };
+		98FEEC761875F3F600F0F9DA /* PPSwitchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FEEC721875F3F600F0F9DA /* PPSwitchViewController.h */; };
+		98FEEC771875F3F600F0F9DA /* PPSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FEEC731875F3F600F0F9DA /* PPSwitchViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27280CAB1864EC660023E69A /* PPLoadingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoadingTableViewController.h; sourceTree = "<group>"; };
+		27280CAC1864EC660023E69A /* PPLoadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoadingTableViewController.m; sourceTree = "<group>"; };
+		27FF8091180957620090B81D /* PPDelegateInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDelegateInterceptor.h; sourceTree = "<group>"; };
+		27FF8092180957620090B81D /* PPDelegateInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDelegateInterceptor.m; sourceTree = "<group>"; };
+		520C4AE6174F43AC0042D54B /* PPTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTableView.h; sourceTree = "<group>"; };
+		520C4AE7174F43AC0042D54B /* PPTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTableView.m; sourceTree = "<group>"; };
+		521000DE16E4817D0036FA3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		521000E016E481850036FA3B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		521000E216E4819C0036FA3B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		52147EB417044C3500796A3D /* PPKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPKeyboardViewController.h; sourceTree = "<group>"; };
+		52147EB517044C3500796A3D /* PPKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPKeyboardViewController.m; sourceTree = "<group>"; };
+		522666CA170ACFF100DA86C3 /* PPManagedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPManagedViewController.h; sourceTree = "<group>"; };
+		522666CB170ACFF100DA86C3 /* PPManagedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPManagedViewController.m; sourceTree = "<group>"; };
+		522666CE170AD20C00DA86C3 /* PPManagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPManagedTableViewController.h; sourceTree = "<group>"; };
+		522666CF170AD20C00DA86C3 /* PPManagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPManagedTableViewController.m; sourceTree = "<group>"; };
+		5226A99216E8784500986AE1 /* UIColor+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		5226A99316E8784500986AE1 /* UIColor+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		522E8C1D17057D9F00397F34 /* PPManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPManagedObject.h; sourceTree = "<group>"; };
+		522E8C1E17057D9F00397F34 /* PPManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPManagedObject.m; sourceTree = "<group>"; };
+		522E8C2117057DB600397F34 /* PPRemoteManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRemoteManagedObject.h; sourceTree = "<group>"; };
+		522E8C2217057DB600397F34 /* PPRemoteManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRemoteManagedObject.m; sourceTree = "<group>"; };
+		527CCCA3174E078E0018136A /* PPCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCollectionViewController.h; sourceTree = "<group>"; };
+		527CCCA4174E078E0018136A /* PPCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCollectionViewController.m; sourceTree = "<group>"; };
+		527CCCA7174E07A90018136A /* PPManagedCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPManagedCollectionViewController.h; sourceTree = "<group>"; };
+		527CCCA8174E07A90018136A /* PPManagedCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPManagedCollectionViewController.m; sourceTree = "<group>"; };
+		527CCCAC174E0AD00018136A /* PPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCollectionViewCell.h; sourceTree = "<group>"; };
+		527CCCAD174E0AD00018136A /* PPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCollectionViewCell.m; sourceTree = "<group>"; };
+		52941AE116FB474A0068D4D6 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52CB1B3216F9FA3C00A33A1A /* PPTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTouchView.h; sourceTree = "<group>"; };
+		52CB1B3316F9FA3C00A33A1A /* PPTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTouchView.m; sourceTree = "<group>"; };
+		98024C5617F2F62E0047535F /* NSString+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		98024C5717F2F62E0047535F /* NSString+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		98080DF918322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		98080DFA18322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		980A2A52181AA47500D030A0 /* PPObjectInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPObjectInterceptor.h; sourceTree = "<group>"; };
+		980A2A53181AA47500D030A0 /* PPObjectInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPObjectInterceptor.m; sourceTree = "<group>"; };
+		9811516C17E852CC00E490D0 /* PPDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDelegateManager.h; sourceTree = "<group>"; };
+		9811516D17E852CC00E490D0 /* PPDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDelegateManager.m; sourceTree = "<group>"; };
+		9821CEE017E1A396009E6E2F /* PPLoadingCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoadingCollectionViewCell.h; sourceTree = "<group>"; };
+		9821CEE117E1A396009E6E2F /* PPLoadingCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoadingCollectionViewCell.m; sourceTree = "<group>"; };
+		9821CEE517E1AB3A009E6E2F /* PPCollectionCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCollectionCellBackgroundView.h; sourceTree = "<group>"; };
+		9821CEE617E1AB3A009E6E2F /* PPCollectionCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCollectionCellBackgroundView.m; sourceTree = "<group>"; };
+		9823AEBD170F8E080064283D /* UIView+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		9823AEBE170F8E080064283D /* UIView+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		98286F1117EC65B400FBDC64 /* podspec.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = podspec.strings; sourceTree = "<group>"; };
+		982B6C6516E9453200DCB343 /* NSDictionary+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		982B6C6616E9453200DCB343 /* NSDictionary+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		983FC3371861C74400299DF9 /* CAAnimation+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		983FC3381861C74400299DF9 /* CAAnimation+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		98546469188C4D2900F76523 /* FCYAssertHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCYAssertHandler.h; sourceTree = "<group>"; };
+		9854646A188C4D2900F76523 /* FCYAssertHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCYAssertHandler.m; sourceTree = "<group>"; };
+		9854646B188C4D2900F76523 /* FCYAsserts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCYAsserts.h; sourceTree = "<group>"; };
+		9854646F188C4D3A00F76523 /* FCYAsserts.string */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FCYAsserts.string; sourceTree = "<group>"; };
+		98546EB21851BE5D008F127A /* NSData+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		98546EB31851BE5D008F127A /* NSData+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		98546EB61851BECA008F127A /* NSArray+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		98546EB71851BECA008F127A /* NSArray+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		9856D54118605BDC005A9F93 /* PPStateMachineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPStateMachineViewController.h; sourceTree = "<group>"; };
+		9856D54218605BDC005A9F93 /* PPStateMachineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPStateMachineViewController.m; sourceTree = "<group>"; };
+		98594E99177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+PSTCollectionViewAdditions.h"; sourceTree = "<group>"; };
+		98594E9A177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+PSTCollectionViewAdditions.m"; sourceTree = "<group>"; };
+		98594E9B177F1C670080CCEA /* PSTCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionView.h; sourceTree = "<group>"; };
+		98594E9C177F1C670080CCEA /* PSTCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionView.m; sourceTree = "<group>"; };
+		98594E9D177F1C670080CCEA /* PSTCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewCell.h; sourceTree = "<group>"; };
+		98594E9E177F1C670080CCEA /* PSTCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewCell.m; sourceTree = "<group>"; };
+		98594E9F177F1C670080CCEA /* PSTCollectionViewCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewCommon.h; sourceTree = "<group>"; };
+		98594EA0177F1C670080CCEA /* PSTCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewController.h; sourceTree = "<group>"; };
+		98594EA1177F1C670080CCEA /* PSTCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewController.m; sourceTree = "<group>"; };
+		98594EA2177F1C670080CCEA /* PSTCollectionViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewData.h; sourceTree = "<group>"; };
+		98594EA3177F1C670080CCEA /* PSTCollectionViewData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewData.m; sourceTree = "<group>"; };
+		98594EA4177F1C670080CCEA /* PSTCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		98594EA5177F1C670080CCEA /* PSTCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		98594EA6177F1C670080CCEA /* PSTCollectionViewItemKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewItemKey.h; sourceTree = "<group>"; };
+		98594EA7177F1C670080CCEA /* PSTCollectionViewItemKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewItemKey.m; sourceTree = "<group>"; };
+		98594EA8177F1C670080CCEA /* PSTCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewLayout.h; sourceTree = "<group>"; };
+		98594EA9177F1C670080CCEA /* PSTCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewLayout.m; sourceTree = "<group>"; };
+		98594EAA177F1C670080CCEA /* PSTCollectionViewLayout+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PSTCollectionViewLayout+Internals.h"; sourceTree = "<group>"; };
+		98594EAB177F1C670080CCEA /* PSTCollectionViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewUpdateItem.h; sourceTree = "<group>"; };
+		98594EAC177F1C670080CCEA /* PSTCollectionViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewUpdateItem.m; sourceTree = "<group>"; };
+		98594EAD177F1C670080CCEA /* PSTGridLayoutInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutInfo.h; sourceTree = "<group>"; };
+		98594EAE177F1C670080CCEA /* PSTGridLayoutInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutInfo.m; sourceTree = "<group>"; };
+		98594EAF177F1C670080CCEA /* PSTGridLayoutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutItem.h; sourceTree = "<group>"; };
+		98594EB0177F1C670080CCEA /* PSTGridLayoutItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutItem.m; sourceTree = "<group>"; };
+		98594EB1177F1C670080CCEA /* PSTGridLayoutRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutRow.h; sourceTree = "<group>"; };
+		98594EB2177F1C670080CCEA /* PSTGridLayoutRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutRow.m; sourceTree = "<group>"; };
+		98594EB3177F1C670080CCEA /* PSTGridLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutSection.h; sourceTree = "<group>"; };
+		98594EB4177F1C670080CCEA /* PSTGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutSection.m; sourceTree = "<group>"; };
+		986008CE181720F900A0FD82 /* PPDefaultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDefaultTableViewCell.h; sourceTree = "<group>"; };
+		986008CF181720F900A0FD82 /* PPDefaultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDefaultTableViewCell.m; sourceTree = "<group>"; };
+		9860F3D316E69D23000797A3 /* PPToolkitResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPToolkitResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9860F3D416E69D23000797A3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9860F3D816E69D23000797A3 /* PPToolkitResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PPToolkitResources-Info.plist"; sourceTree = "<group>"; };
+		9860F3DC16E69D23000797A3 /* PPToolkitResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPToolkitResources-Prefix.pch"; sourceTree = "<group>"; };
+		9860F3E216E69DEA000797A3 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		9860F3E316E69DEA000797A3 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		9860F3E416E69DEA000797A3 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		9860F3E516E69DEA000797A3 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		9860F3E616E69DEA000797A3 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		9860F3E716E69DEA000797A3 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		9860F3E816E69DEA000797A3 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		9860F3E916E69DEA000797A3 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		9860F3F316E69E64000797A3 /* UIImage+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		9860F3F416E69E64000797A3 /* UIImage+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		9860F3F716E6A146000797A3 /* NSBundle+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		9860F3F816E6A146000797A3 /* NSBundle+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		9866C0AE16F66BDE00A0022A /* PPPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPageScrollView.h; sourceTree = "<group>"; };
+		9866C0AF16F66BDE00A0022A /* PPPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPageScrollView.m; sourceTree = "<group>"; };
+		9866C0B216F66BF900A0022A /* PPPageScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPageScrollViewCell.h; sourceTree = "<group>"; };
+		9866C0B316F66BF900A0022A /* PPPageScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPageScrollViewCell.m; sourceTree = "<group>"; };
+		9866C0B616F66C1B00A0022A /* PPPageScrollViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPageScrollViewProtocol.h; sourceTree = "<group>"; };
+		986847371863263400DFEFAC /* PPSemiSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSemiSheetController.h; sourceTree = "<group>"; };
+		986847381863263400DFEFAC /* PPSemiSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSemiSheetController.m; sourceTree = "<group>"; };
+		986847391863263400DFEFAC /* PPSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSheetController.h; sourceTree = "<group>"; };
+		9868473A1863263400DFEFAC /* PPSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSheetController.m; sourceTree = "<group>"; };
+		9868474C1863352300DFEFAC /* PPGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGradientView.h; sourceTree = "<group>"; };
+		9868474D1863352300DFEFAC /* PPGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGradientView.m; sourceTree = "<group>"; };
+		9868475018633BF800DFEFAC /* PPGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGradientLayer.h; sourceTree = "<group>"; };
+		9868475118633BF800DFEFAC /* PPGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGradientLayer.m; sourceTree = "<group>"; };
+		986A090D1812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		986A090E1812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		986A09111812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		986A09121812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		986A09151812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		986A09161812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		986B04951802C4D600B17F36 /* PPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNavigationController.h; sourceTree = "<group>"; };
+		986B04961802C4D600B17F36 /* PPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNavigationController.m; sourceTree = "<group>"; };
+		986B4EBD17882FC00088AD82 /* PPTableCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTableCellBackgroundView.h; sourceTree = "<group>"; };
+		986B4EBE17882FC00088AD82 /* PPTableCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTableCellBackgroundView.m; sourceTree = "<group>"; };
+		986B4EC317884AAC0088AD82 /* PPRightDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRightDetailTableViewCell.h; sourceTree = "<group>"; };
+		986B4EC417884AAD0088AD82 /* PPRightDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRightDetailTableViewCell.m; sourceTree = "<group>"; };
+		986B4EC717884ACB0088AD82 /* PPSubtitleDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSubtitleDetailTableViewCell.h; sourceTree = "<group>"; };
+		986B4EC817884ACC0088AD82 /* PPSubtitleDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSubtitleDetailTableViewCell.m; sourceTree = "<group>"; };
+		98703F3418703C4700244A93 /* PPLoadingCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoadingCollectionViewController.h; sourceTree = "<group>"; };
+		98703F3518703C4700244A93 /* PPLoadingCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoadingCollectionViewController.m; sourceTree = "<group>"; };
+		98703F3818703C6F00244A93 /* PPManagedLoadingCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPManagedLoadingCollectionViewController.h; sourceTree = "<group>"; };
+		98703F3918703C6F00244A93 /* PPManagedLoadingCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPManagedLoadingCollectionViewController.m; sourceTree = "<group>"; };
+		98718009180EC35800BCE59B /* PPTimerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPTimerProtocol.h; sourceTree = "<group>"; };
+		9871800A180EC50100BCE59B /* PPTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTimer.h; sourceTree = "<group>"; };
+		9871800B180EC50100BCE59B /* PPTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTimer.m; sourceTree = "<group>"; };
+		9871800E180EC52100BCE59B /* PPGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGCDTimer.h; sourceTree = "<group>"; };
+		9871800F180EC52100BCE59B /* PPGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGCDTimer.m; sourceTree = "<group>"; };
+		9876B27A1868E0390007D423 /* PPManagedLoadingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPManagedLoadingTableViewController.h; sourceTree = "<group>"; };
+		9876B27B1868E0390007D423 /* PPManagedLoadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPManagedLoadingTableViewController.m; sourceTree = "<group>"; };
+		987832CC17A31A5900C863DF /* PPAutorotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPAutorotation.h; sourceTree = "<group>"; };
+		987832CD17A31A8B00C863DF /* PPAutorotationCompatibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPAutorotationCompatibility.h; sourceTree = "<group>"; };
+		987832D017A31BD900C863DF /* UIViewController+PPToolkitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PPToolkitExtensions.h"; sourceTree = "<group>"; };
+		987832D117A31BD900C863DF /* UIViewController+PPToolkitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PPToolkitExtensions.m"; sourceTree = "<group>"; };
+		987832D517A31CBA00C863DF /* PPRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRuntime.h; sourceTree = "<group>"; };
+		987832D617A31CBA00C863DF /* PPRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRuntime.m; sourceTree = "<group>"; };
+		987832D917A31D7200C863DF /* UINavigationController+PPToolkitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PPToolkitExtensions.h"; sourceTree = "<group>"; };
+		987832DA17A31D7200C863DF /* UINavigationController+PPToolkitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+PPToolkitExtensions.m"; sourceTree = "<group>"; };
+		987832DD17A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+PPToolkitExtensions.h"; sourceTree = "<group>"; };
+		987832DE17A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+PPToolkitExtensions.m"; sourceTree = "<group>"; };
+		987832E117A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+PPToolkitExtensions.h"; sourceTree = "<group>"; };
+		987832E217A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+PPToolkitExtensions.m"; sourceTree = "<group>"; };
+		987832E517A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+PPToolkitExtensions.h"; sourceTree = "<group>"; };
+		987832E617A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+PPToolkitExtensions.m"; sourceTree = "<group>"; };
+		98A982B81859E0D800EC8CAA /* PPStateMachineOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPStateMachineOperation.h; sourceTree = "<group>"; };
+		98A982B91859E0D800EC8CAA /* PPStateMachineOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPStateMachineOperation.m; sourceTree = "<group>"; };
+		98A982BD1859E17F00EC8CAA /* PPCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCache.h; sourceTree = "<group>"; };
+		98A982BE1859E17F00EC8CAA /* PPCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCache.m; sourceTree = "<group>"; };
+		98A982C31859E93800EC8CAA /* PPSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSynthesizeSingleton.h; sourceTree = "<group>"; };
+		98ABC04716E389B300ECC76B /* libPPToolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPPToolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		98ABC04A16E389B300ECC76B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		98ABC04E16E389B400ECC76B /* PPToolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPToolkit-Prefix.pch"; sourceTree = "<group>"; };
+		98ABC04F16E389B400ECC76B /* PPToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PPToolkit.h; path = PPToolkit/PPToolkit.h; sourceTree = "<group>"; };
+		98ABC05A16E38C8300ECC76B /* PPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPViewController.h; sourceTree = "<group>"; };
+		98ABC05B16E38C8300ECC76B /* PPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPViewController.m; sourceTree = "<group>"; };
+		98ABC05D16E38CAD00ECC76B /* PPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTableViewController.h; sourceTree = "<group>"; };
+		98ABC05E16E38CAD00ECC76B /* PPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTableViewController.m; sourceTree = "<group>"; };
+		98ABC06216E3907F00ECC76B /* PPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTableViewCell.h; sourceTree = "<group>"; };
+		98ABC06316E3907F00ECC76B /* PPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTableViewCell.m; sourceTree = "<group>"; };
+		98ABC06816E3954B00ECC76B /* PPLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoadingView.h; sourceTree = "<group>"; };
+		98ABC06916E3954B00ECC76B /* PPLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoadingView.m; sourceTree = "<group>"; };
+		98ABC06C16E396B600ECC76B /* PPLoadingContentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLoadingContentProtocol.h; sourceTree = "<group>"; };
+		98ABC06E16E3A09800ECC76B /* PPToolkitDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPToolkitDefines.h; sourceTree = "<group>"; };
+		98ABC06F16E3A09800ECC76B /* PPToolkitDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPToolkitDefines.m; sourceTree = "<group>"; };
+		98ABC07416E3AE7F00ECC76B /* PPLoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoadingTableViewCell.h; sourceTree = "<group>"; };
+		98ABC07516E3AE7F00ECC76B /* PPLoadingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoadingTableViewCell.m; sourceTree = "<group>"; };
+		98ABC07A16E3B7BB00ECC76B /* PPDrawingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDrawingUtilities.h; sourceTree = "<group>"; };
+		98ABC07B16E3B7BB00ECC76B /* PPDrawingUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDrawingUtilities.m; sourceTree = "<group>"; };
+		98ABC09616E401C500ECC76B /* PPCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PPCategories.h; path = PPToolkit/PPCategories.h; sourceTree = "<group>"; };
+		98AD758B17F97F50002F58AD /* PPOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOperationQueue.h; sourceTree = "<group>"; };
+		98AD758C17F97F50002F58AD /* PPOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOperationQueue.m; sourceTree = "<group>"; };
+		98AD758F17F97F6A002F58AD /* PPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOperation.h; sourceTree = "<group>"; };
+		98AD759017F97F6A002F58AD /* PPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOperation.m; sourceTree = "<group>"; };
+		98AD759117F97F6A002F58AD /* PPKVOOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPKVOOperation.h; sourceTree = "<group>"; };
+		98AD759217F97F6A002F58AD /* PPKVOOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPKVOOperation.m; sourceTree = "<group>"; };
+		98AD759317F97F6A002F58AD /* PPDispatchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDispatchOperation.h; sourceTree = "<group>"; };
+		98AD759417F97F6A002F58AD /* PPDispatchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDispatchOperation.m; sourceTree = "<group>"; };
+		98AD759517F97F6A002F58AD /* PPGroupOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGroupOperation.h; sourceTree = "<group>"; };
+		98AD759617F97F6A002F58AD /* PPGroupOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGroupOperation.m; sourceTree = "<group>"; };
+		98AD759717F97F6A002F58AD /* PPKVOGroupOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPKVOGroupOperation.h; sourceTree = "<group>"; };
+		98AD759817F97F6A002F58AD /* PPKVOGroupOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPKVOGroupOperation.m; sourceTree = "<group>"; };
+		98AD759917F97F6A002F58AD /* PPDispatchGroupOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDispatchGroupOperation.h; sourceTree = "<group>"; };
+		98AD759A17F97F6A002F58AD /* PPDispatchGroupOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDispatchGroupOperation.m; sourceTree = "<group>"; };
+		98AD75A717F97F7B002F58AD /* PPProgressObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPProgressObserver.h; sourceTree = "<group>"; };
+		98AD75A817F97F7B002F58AD /* PPProgressObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPProgressObserver.m; sourceTree = "<group>"; };
+		98AD75A917F97F7B002F58AD /* PPOperationStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOperationStateMachine.h; sourceTree = "<group>"; };
+		98AD75AA17F97F7B002F58AD /* PPOperationStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOperationStateMachine.m; sourceTree = "<group>"; };
+		98AD75BE17F980E1002F58AD /* podspec.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = podspec.strings; sourceTree = "<group>"; };
+		98AD75BF17F98146002F58AD /* TKEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKEvent.h; sourceTree = "<group>"; };
+		98AD75C017F98146002F58AD /* TKEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKEvent.m; sourceTree = "<group>"; };
+		98AD75C117F98146002F58AD /* TKState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKState.h; sourceTree = "<group>"; };
+		98AD75C217F98146002F58AD /* TKState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKState.m; sourceTree = "<group>"; };
+		98AD75C317F98146002F58AD /* TKStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKStateMachine.h; sourceTree = "<group>"; };
+		98AD75C417F98146002F58AD /* TKStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKStateMachine.m; sourceTree = "<group>"; };
+		98AD75C517F98146002F58AD /* TransitionKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionKit.h; sourceTree = "<group>"; };
+		98C335AE183E2916001D5F37 /* PPCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCoreDataStore.h; sourceTree = "<group>"; };
+		98C335AF183E2916001D5F37 /* PPCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCoreDataStore.m; sourceTree = "<group>"; };
+		98C335B9183E3CEE001D5F37 /* PPManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPManagedObjectContext.h; sourceTree = "<group>"; };
+		98C335BA183E3CEE001D5F37 /* PPManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPManagedObjectContext.m; sourceTree = "<group>"; };
+		98D6EF0F16F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+PPToolkitAdditions.h"; sourceTree = "<group>"; };
+		98D6EF1016F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+PPToolkitAdditions.m"; sourceTree = "<group>"; };
+		98D6EF2116F52C8E00F34BD4 /* PPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPButton.h; sourceTree = "<group>"; };
+		98D6EF2216F52C8E00F34BD4 /* PPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPButton.m; sourceTree = "<group>"; };
+		98D6EF2516F52E0F00F34BD4 /* PPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextField.h; sourceTree = "<group>"; };
+		98D6EF2616F52E0F00F34BD4 /* PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextField.m; sourceTree = "<group>"; };
+		98E5434417DDDA93008E0DB6 /* PPAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAccessoryView.h; sourceTree = "<group>"; };
+		98E5434517DDDA93008E0DB6 /* PPAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAccessoryView.m; sourceTree = "<group>"; };
+		98FEEC701875F3F600F0F9DA /* PPSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSegmentedViewController.h; sourceTree = "<group>"; };
+		98FEEC711875F3F600F0F9DA /* PPSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSegmentedViewController.m; sourceTree = "<group>"; };
+		98FEEC721875F3F600F0F9DA /* PPSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSwitchViewController.h; sourceTree = "<group>"; };
+		98FEEC731875F3F600F0F9DA /* PPSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSwitchViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9860F3D016E69D23000797A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9860F3D516E69D23000797A3 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98ABC04416E389B300ECC76B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98ABC04B16E389B300ECC76B /* Foundation.framework in Frameworks */,
+				521000DF16E4817D0036FA3B /* UIKit.framework in Frameworks */,
+				521000E316E4819C0036FA3B /* QuartzCore.framework in Frameworks */,
+				521000E116E481850036FA3B /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		520C4AE5174F438D0042D54B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				520C4AE6174F43AC0042D54B /* PPTableView.h */,
+				520C4AE7174F43AC0042D54B /* PPTableView.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		522E8C1B17057D7000397F34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98C335AD183E28F1001D5F37 /* CoreData */,
+				98718008180EC34000BCE59B /* Timers */,
+				98AD758217F97EBC002F58AD /* OperationQueueController */,
+				9811516C17E852CC00E490D0 /* PPDelegateManager.h */,
+				9811516D17E852CC00E490D0 /* PPDelegateManager.m */,
+				980A2A52181AA47500D030A0 /* PPObjectInterceptor.h */,
+				980A2A53181AA47500D030A0 /* PPObjectInterceptor.m */,
+				27FF8091180957620090B81D /* PPDelegateInterceptor.h */,
+				27FF8092180957620090B81D /* PPDelegateInterceptor.m */,
+				98A982BD1859E17F00EC8CAA /* PPCache.h */,
+				98A982BE1859E17F00EC8CAA /* PPCache.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		522E8C1C17057D8200397F34 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				522E8C1D17057D9F00397F34 /* PPManagedObject.h */,
+				522E8C1E17057D9F00397F34 /* PPManagedObject.m */,
+				522E8C2117057DB600397F34 /* PPRemoteManagedObject.h */,
+				522E8C2217057DB600397F34 /* PPRemoteManagedObject.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		527CCCAB174E0A620018136A /* CollectionView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9821CEE417E1AACD009E6E2F /* Backgrounds */,
+				527CCCAC174E0AD00018136A /* PPCollectionViewCell.h */,
+				527CCCAD174E0AD00018136A /* PPCollectionViewCell.m */,
+				9821CEE017E1A396009E6E2F /* PPLoadingCollectionViewCell.h */,
+				9821CEE117E1A396009E6E2F /* PPLoadingCollectionViewCell.m */,
+			);
+			name = "CollectionView Cells";
+			sourceTree = "<group>";
+		};
+		981963B5178591500024B880 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				986B4EBD17882FC00088AD82 /* PPTableCellBackgroundView.h */,
+				986B4EBE17882FC00088AD82 /* PPTableCellBackgroundView.m */,
+			);
+			name = Backgrounds;
+			sourceTree = "<group>";
+		};
+		98219B37180530CE0077EE98 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				98ABC05D16E38CAD00ECC76B /* PPTableViewController.h */,
+				98ABC05E16E38CAD00ECC76B /* PPTableViewController.m */,
+				27280CAB1864EC660023E69A /* PPLoadingTableViewController.h */,
+				27280CAC1864EC660023E69A /* PPLoadingTableViewController.m */,
+				522666CE170AD20C00DA86C3 /* PPManagedTableViewController.h */,
+				522666CF170AD20C00DA86C3 /* PPManagedTableViewController.m */,
+				9876B27A1868E0390007D423 /* PPManagedLoadingTableViewController.h */,
+				9876B27B1868E0390007D423 /* PPManagedLoadingTableViewController.m */,
+			);
+			name = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		98219B38180530D80077EE98 /* CollectionViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				527CCCA3174E078E0018136A /* PPCollectionViewController.h */,
+				527CCCA4174E078E0018136A /* PPCollectionViewController.m */,
+				98703F3418703C4700244A93 /* PPLoadingCollectionViewController.h */,
+				98703F3518703C4700244A93 /* PPLoadingCollectionViewController.m */,
+				527CCCA7174E07A90018136A /* PPManagedCollectionViewController.h */,
+				527CCCA8174E07A90018136A /* PPManagedCollectionViewController.m */,
+				98703F3818703C6F00244A93 /* PPManagedLoadingCollectionViewController.h */,
+				98703F3918703C6F00244A93 /* PPManagedLoadingCollectionViewController.m */,
+			);
+			name = CollectionViewControllers;
+			sourceTree = "<group>";
+		};
+		9821CEE417E1AACD009E6E2F /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				9821CEE517E1AB3A009E6E2F /* PPCollectionCellBackgroundView.h */,
+				9821CEE617E1AB3A009E6E2F /* PPCollectionCellBackgroundView.m */,
+			);
+			name = Backgrounds;
+			sourceTree = "<group>";
+		};
+		9823AEA9170F7CA50064283D /* CustomControllers */ = {
+			isa = PBXGroup;
+			children = (
+				98FEEC721875F3F600F0F9DA /* PPSwitchViewController.h */,
+				98FEEC731875F3F600F0F9DA /* PPSwitchViewController.m */,
+				98FEEC701875F3F600F0F9DA /* PPSegmentedViewController.h */,
+				98FEEC711875F3F600F0F9DA /* PPSegmentedViewController.m */,
+				986847391863263400DFEFAC /* PPSheetController.h */,
+				9868473A1863263400DFEFAC /* PPSheetController.m */,
+				986847371863263400DFEFAC /* PPSemiSheetController.h */,
+				986847381863263400DFEFAC /* PPSemiSheetController.m */,
+			);
+			path = CustomControllers;
+			sourceTree = "<group>";
+		};
+		983FC3361861C71D00299DF9 /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				983FC3371861C74400299DF9 /* CAAnimation+PPToolkitAdditions.h */,
+				983FC3381861C74400299DF9 /* CAAnimation+PPToolkitAdditions.m */,
+			);
+			name = QuartzCore;
+			sourceTree = "<group>";
+		};
+		98546468188C4D2900F76523 /* FCYAsserts */ = {
+			isa = PBXGroup;
+			children = (
+				9854646F188C4D3A00F76523 /* FCYAsserts.string */,
+				98546469188C4D2900F76523 /* FCYAssertHandler.h */,
+				9854646A188C4D2900F76523 /* FCYAssertHandler.m */,
+				9854646B188C4D2900F76523 /* FCYAsserts.h */,
+			);
+			path = FCYAsserts;
+			sourceTree = "<group>";
+		};
+		98594E97177F1BCE0080CCEA /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				98546468188C4D2900F76523 /* FCYAsserts */,
+				98AD75AF17F98085002F58AD /* TransitionKit */,
+				98594E98177F1BE50080CCEA /* PSTCollectionView */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		98594E98177F1BE50080CCEA /* PSTCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				98286F1117EC65B400FBDC64 /* podspec.strings */,
+				98594E99177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.h */,
+				98594E9A177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.m */,
+				98594E9B177F1C670080CCEA /* PSTCollectionView.h */,
+				98594E9C177F1C670080CCEA /* PSTCollectionView.m */,
+				98594E9D177F1C670080CCEA /* PSTCollectionViewCell.h */,
+				98594E9E177F1C670080CCEA /* PSTCollectionViewCell.m */,
+				98594E9F177F1C670080CCEA /* PSTCollectionViewCommon.h */,
+				98594EA0177F1C670080CCEA /* PSTCollectionViewController.h */,
+				98594EA1177F1C670080CCEA /* PSTCollectionViewController.m */,
+				98594EA2177F1C670080CCEA /* PSTCollectionViewData.h */,
+				98594EA3177F1C670080CCEA /* PSTCollectionViewData.m */,
+				98594EA4177F1C670080CCEA /* PSTCollectionViewFlowLayout.h */,
+				98594EA5177F1C670080CCEA /* PSTCollectionViewFlowLayout.m */,
+				98594EA6177F1C670080CCEA /* PSTCollectionViewItemKey.h */,
+				98594EA7177F1C670080CCEA /* PSTCollectionViewItemKey.m */,
+				98594EA8177F1C670080CCEA /* PSTCollectionViewLayout.h */,
+				98594EA9177F1C670080CCEA /* PSTCollectionViewLayout.m */,
+				98594EAA177F1C670080CCEA /* PSTCollectionViewLayout+Internals.h */,
+				98594EAB177F1C670080CCEA /* PSTCollectionViewUpdateItem.h */,
+				98594EAC177F1C670080CCEA /* PSTCollectionViewUpdateItem.m */,
+				98594EAD177F1C670080CCEA /* PSTGridLayoutInfo.h */,
+				98594EAE177F1C670080CCEA /* PSTGridLayoutInfo.m */,
+				98594EAF177F1C670080CCEA /* PSTGridLayoutItem.h */,
+				98594EB0177F1C670080CCEA /* PSTGridLayoutItem.m */,
+				98594EB1177F1C670080CCEA /* PSTGridLayoutRow.h */,
+				98594EB2177F1C670080CCEA /* PSTGridLayoutRow.m */,
+				98594EB3177F1C670080CCEA /* PSTGridLayoutSection.h */,
+				98594EB4177F1C670080CCEA /* PSTGridLayoutSection.m */,
+			);
+			path = PSTCollectionView;
+			sourceTree = "<group>";
+		};
+		9860F3D616E69D23000797A3 /* PPToolkitResources */ = {
+			isa = PBXGroup;
+			children = (
+				9860F3E016E69DBC000797A3 /* Images */,
+				9860F3D716E69D23000797A3 /* Supporting Files */,
+			);
+			path = PPToolkitResources;
+			sourceTree = "<group>";
+		};
+		9860F3D716E69D23000797A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9860F3D816E69D23000797A3 /* PPToolkitResources-Info.plist */,
+				9860F3D916E69D23000797A3 /* InfoPlist.strings */,
+				9860F3DC16E69D23000797A3 /* PPToolkitResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9860F3E016E69DBC000797A3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9860F3E116E69DD9000797A3 /* PullToRefresh */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9860F3E116E69DD9000797A3 /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				9860F3E216E69DEA000797A3 /* blackArrow.png */,
+				9860F3E316E69DEA000797A3 /* blackArrow@2x.png */,
+				9860F3E416E69DEA000797A3 /* blueArrow.png */,
+				9860F3E516E69DEA000797A3 /* blueArrow@2x.png */,
+				9860F3E616E69DEA000797A3 /* grayArrow.png */,
+				9860F3E716E69DEA000797A3 /* grayArrow@2x.png */,
+				9860F3E816E69DEA000797A3 /* whiteArrow.png */,
+				9860F3E916E69DEA000797A3 /* whiteArrow@2x.png */,
+			);
+			name = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		9860F3FB16E6A14D000797A3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9860F3F316E69E64000797A3 /* UIImage+PPToolkitAdditions.h */,
+				9860F3F416E69E64000797A3 /* UIImage+PPToolkitAdditions.m */,
+				5226A99216E8784500986AE1 /* UIColor+PPToolkitAdditions.h */,
+				5226A99316E8784500986AE1 /* UIColor+PPToolkitAdditions.m */,
+				98D6EF0F16F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.h */,
+				98D6EF1016F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.m */,
+				9823AEBD170F8E080064283D /* UIView+PPToolkitAdditions.h */,
+				9823AEBE170F8E080064283D /* UIView+PPToolkitAdditions.m */,
+				986A090D1812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.h */,
+				986A090E1812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.m */,
+				986A09111812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.h */,
+				986A09121812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.m */,
+				986A09151812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.h */,
+				986A09161812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		9860F3FC16E6A154000797A3 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9860F3F716E6A146000797A3 /* NSBundle+PPToolkitAdditions.h */,
+				9860F3F816E6A146000797A3 /* NSBundle+PPToolkitAdditions.m */,
+				98546EB21851BE5D008F127A /* NSData+PPToolkitAdditions.h */,
+				98546EB31851BE5D008F127A /* NSData+PPToolkitAdditions.m */,
+				98024C5617F2F62E0047535F /* NSString+PPToolkitAdditions.h */,
+				98024C5717F2F62E0047535F /* NSString+PPToolkitAdditions.m */,
+				98546EB61851BECA008F127A /* NSArray+PPToolkitAdditions.h */,
+				98546EB71851BECA008F127A /* NSArray+PPToolkitAdditions.m */,
+				982B6C6516E9453200DCB343 /* NSDictionary+PPToolkitAdditions.h */,
+				982B6C6616E9453200DCB343 /* NSDictionary+PPToolkitAdditions.m */,
+				98080DF918322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.h */,
+				98080DFA18322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		9866C0AD16F66BB000A0022A /* PageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9866C0AE16F66BDE00A0022A /* PPPageScrollView.h */,
+				9866C0AF16F66BDE00A0022A /* PPPageScrollView.m */,
+				9866C0B216F66BF900A0022A /* PPPageScrollViewCell.h */,
+				9866C0B316F66BF900A0022A /* PPPageScrollViewCell.m */,
+			);
+			name = PageScrollView;
+			sourceTree = "<group>";
+		};
+		98718008180EC34000BCE59B /* Timers */ = {
+			isa = PBXGroup;
+			children = (
+				98718009180EC35800BCE59B /* PPTimerProtocol.h */,
+				9871800A180EC50100BCE59B /* PPTimer.h */,
+				9871800B180EC50100BCE59B /* PPTimer.m */,
+				9871800E180EC52100BCE59B /* PPGCDTimer.h */,
+				9871800F180EC52100BCE59B /* PPGCDTimer.m */,
+			);
+			name = Timers;
+			sourceTree = "<group>";
+		};
+		987832CE17A31B5400C863DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				987832D017A31BD900C863DF /* UIViewController+PPToolkitExtensions.h */,
+				987832D117A31BD900C863DF /* UIViewController+PPToolkitExtensions.m */,
+				987832D917A31D7200C863DF /* UINavigationController+PPToolkitExtensions.h */,
+				987832DA17A31D7200C863DF /* UINavigationController+PPToolkitExtensions.m */,
+				987832DD17A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.h */,
+				987832DE17A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.m */,
+				987832E517A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.h */,
+				987832E617A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.m */,
+				987832E117A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.h */,
+				987832E217A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		987832CF17A31B5F00C863DF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				987832CC17A31A5900C863DF /* PPAutorotation.h */,
+				987832CD17A31A8B00C863DF /* PPAutorotationCompatibility.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		987832D417A31C8C00C863DF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				987832D517A31CBA00C863DF /* PPRuntime.h */,
+				987832D617A31CBA00C863DF /* PPRuntime.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		98ABC03E16E389B300ECC76B = {
+			isa = PBXGroup;
+			children = (
+				98ABC04F16E389B400ECC76B /* PPToolkit.h */,
+				98ABC09616E401C500ECC76B /* PPCategories.h */,
+				98ABC04C16E389B300ECC76B /* PPToolkit */,
+				9860F3D616E69D23000797A3 /* PPToolkitResources */,
+				98ABC04916E389B300ECC76B /* Frameworks */,
+				98ABC04816E389B300ECC76B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98ABC04816E389B300ECC76B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98ABC04716E389B300ECC76B /* libPPToolkit.a */,
+				9860F3D316E69D23000797A3 /* PPToolkitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98ABC04916E389B300ECC76B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98ABC04A16E389B300ECC76B /* Foundation.framework */,
+				521000DE16E4817D0036FA3B /* UIKit.framework */,
+				521000E216E4819C0036FA3B /* QuartzCore.framework */,
+				521000E016E481850036FA3B /* CoreData.framework */,
+				9860F3D416E69D23000797A3 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98ABC04C16E389B300ECC76B /* PPToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				98ABC06B16E3962600ECC76B /* Protocols */,
+				987832D417A31C8C00C863DF /* Core */,
+				98ABC05916E38BD900ECC76B /* ViewControllers */,
+				9823AEA9170F7CA50064283D /* CustomControllers */,
+				522E8C1B17057D7000397F34 /* Models */,
+				98D6EF2016F52C7200F34BD4 /* Controls */,
+				98ABC06016E3904400ECC76B /* Views */,
+				98ABC09216E3F5F600ECC76B /* Categories */,
+				98ABC06D16E3A07C00ECC76B /* Utilities */,
+				98594E97177F1BCE0080CCEA /* Vendors */,
+				98ABC04D16E389B400ECC76B /* Supporting Files */,
+			);
+			path = PPToolkit;
+			sourceTree = "<group>";
+		};
+		98ABC04D16E389B400ECC76B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98ABC04E16E389B400ECC76B /* PPToolkit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98ABC05916E38BD900ECC76B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				987832CF17A31B5F00C863DF /* Protocols */,
+				987832CE17A31B5400C863DF /* Extensions */,
+				98219B37180530CE0077EE98 /* TableViewControllers */,
+				98219B38180530D80077EE98 /* CollectionViewControllers */,
+				98ABC05A16E38C8300ECC76B /* PPViewController.h */,
+				98ABC05B16E38C8300ECC76B /* PPViewController.m */,
+				9856D54118605BDC005A9F93 /* PPStateMachineViewController.h */,
+				9856D54218605BDC005A9F93 /* PPStateMachineViewController.m */,
+				52147EB417044C3500796A3D /* PPKeyboardViewController.h */,
+				52147EB517044C3500796A3D /* PPKeyboardViewController.m */,
+				522666CA170ACFF100DA86C3 /* PPManagedViewController.h */,
+				522666CB170ACFF100DA86C3 /* PPManagedViewController.m */,
+				986B04951802C4D600B17F36 /* PPNavigationController.h */,
+				986B04961802C4D600B17F36 /* PPNavigationController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		98ABC06016E3904400ECC76B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				520C4AE5174F438D0042D54B /* TableView */,
+				98ABC06116E3905D00ECC76B /* TableView Cells */,
+				527CCCAB174E0A620018136A /* CollectionView Cells */,
+				9866C0AD16F66BB000A0022A /* PageScrollView */,
+				9868475018633BF800DFEFAC /* PPGradientLayer.h */,
+				9868475118633BF800DFEFAC /* PPGradientLayer.m */,
+				9868474C1863352300DFEFAC /* PPGradientView.h */,
+				9868474D1863352300DFEFAC /* PPGradientView.m */,
+				98ABC06816E3954B00ECC76B /* PPLoadingView.h */,
+				98ABC06916E3954B00ECC76B /* PPLoadingView.m */,
+				52CB1B3216F9FA3C00A33A1A /* PPTouchView.h */,
+				52CB1B3316F9FA3C00A33A1A /* PPTouchView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98ABC06116E3905D00ECC76B /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				98E5434317DDDA4D008E0DB6 /* Accessory */,
+				981963B5178591500024B880 /* Backgrounds */,
+				98ABC06216E3907F00ECC76B /* PPTableViewCell.h */,
+				98ABC06316E3907F00ECC76B /* PPTableViewCell.m */,
+				986008CE181720F900A0FD82 /* PPDefaultTableViewCell.h */,
+				986008CF181720F900A0FD82 /* PPDefaultTableViewCell.m */,
+				986B4EC317884AAC0088AD82 /* PPRightDetailTableViewCell.h */,
+				986B4EC417884AAD0088AD82 /* PPRightDetailTableViewCell.m */,
+				986B4EC717884ACB0088AD82 /* PPSubtitleDetailTableViewCell.h */,
+				986B4EC817884ACC0088AD82 /* PPSubtitleDetailTableViewCell.m */,
+				98ABC07416E3AE7F00ECC76B /* PPLoadingTableViewCell.h */,
+				98ABC07516E3AE7F00ECC76B /* PPLoadingTableViewCell.m */,
+			);
+			name = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		98ABC06B16E3962600ECC76B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				98ABC06C16E396B600ECC76B /* PPLoadingContentProtocol.h */,
+				9866C0B616F66C1B00A0022A /* PPPageScrollViewProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		98ABC06D16E3A07C00ECC76B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				98A982C31859E93800EC8CAA /* PPSynthesizeSingleton.h */,
+				98ABC06E16E3A09800ECC76B /* PPToolkitDefines.h */,
+				98ABC06F16E3A09800ECC76B /* PPToolkitDefines.m */,
+				98ABC07A16E3B7BB00ECC76B /* PPDrawingUtilities.h */,
+				98ABC07B16E3B7BB00ECC76B /* PPDrawingUtilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		98ABC09216E3F5F600ECC76B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9860F3FC16E6A154000797A3 /* Foundation */,
+				983FC3361861C71D00299DF9 /* QuartzCore */,
+				9860F3FB16E6A14D000797A3 /* UIKit */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		98AD758217F97EBC002F58AD /* OperationQueueController */ = {
+			isa = PBXGroup;
+			children = (
+				98AD758417F97EE3002F58AD /* OperationQueue */,
+				98AD758517F97EEC002F58AD /* Operation */,
+				98AD758617F97EF2002F58AD /* Support */,
+			);
+			name = OperationQueueController;
+			sourceTree = "<group>";
+		};
+		98AD758417F97EE3002F58AD /* OperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				98AD758B17F97F50002F58AD /* PPOperationQueue.h */,
+				98AD758C17F97F50002F58AD /* PPOperationQueue.m */,
+			);
+			name = OperationQueue;
+			sourceTree = "<group>";
+		};
+		98AD758517F97EEC002F58AD /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				98AD758F17F97F6A002F58AD /* PPOperation.h */,
+				98AD759017F97F6A002F58AD /* PPOperation.m */,
+				98AD759117F97F6A002F58AD /* PPKVOOperation.h */,
+				98AD759217F97F6A002F58AD /* PPKVOOperation.m */,
+				98AD759317F97F6A002F58AD /* PPDispatchOperation.h */,
+				98AD759417F97F6A002F58AD /* PPDispatchOperation.m */,
+				98A982B81859E0D800EC8CAA /* PPStateMachineOperation.h */,
+				98A982B91859E0D800EC8CAA /* PPStateMachineOperation.m */,
+				98AD759517F97F6A002F58AD /* PPGroupOperation.h */,
+				98AD759617F97F6A002F58AD /* PPGroupOperation.m */,
+				98AD759717F97F6A002F58AD /* PPKVOGroupOperation.h */,
+				98AD759817F97F6A002F58AD /* PPKVOGroupOperation.m */,
+				98AD759917F97F6A002F58AD /* PPDispatchGroupOperation.h */,
+				98AD759A17F97F6A002F58AD /* PPDispatchGroupOperation.m */,
+			);
+			name = Operation;
+			sourceTree = "<group>";
+		};
+		98AD758617F97EF2002F58AD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				98AD75A717F97F7B002F58AD /* PPProgressObserver.h */,
+				98AD75A817F97F7B002F58AD /* PPProgressObserver.m */,
+				98AD75A917F97F7B002F58AD /* PPOperationStateMachine.h */,
+				98AD75AA17F97F7B002F58AD /* PPOperationStateMachine.m */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		98AD75AF17F98085002F58AD /* TransitionKit */ = {
+			isa = PBXGroup;
+			children = (
+				98AD75BE17F980E1002F58AD /* podspec.strings */,
+				98AD75BF17F98146002F58AD /* TKEvent.h */,
+				98AD75C017F98146002F58AD /* TKEvent.m */,
+				98AD75C117F98146002F58AD /* TKState.h */,
+				98AD75C217F98146002F58AD /* TKState.m */,
+				98AD75C317F98146002F58AD /* TKStateMachine.h */,
+				98AD75C417F98146002F58AD /* TKStateMachine.m */,
+				98AD75C517F98146002F58AD /* TransitionKit.h */,
+			);
+			path = TransitionKit;
+			sourceTree = "<group>";
+		};
+		98C335AD183E28F1001D5F37 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				522E8C1C17057D8200397F34 /* Entities */,
+				98C335AE183E2916001D5F37 /* PPCoreDataStore.h */,
+				98C335AF183E2916001D5F37 /* PPCoreDataStore.m */,
+				98C335B9183E3CEE001D5F37 /* PPManagedObjectContext.h */,
+				98C335BA183E3CEE001D5F37 /* PPManagedObjectContext.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		98D6EF2016F52C7200F34BD4 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				98D6EF2116F52C8E00F34BD4 /* PPButton.h */,
+				98D6EF2216F52C8E00F34BD4 /* PPButton.m */,
+				98D6EF2516F52E0F00F34BD4 /* PPTextField.h */,
+				98D6EF2616F52E0F00F34BD4 /* PPTextField.m */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		98E5434317DDDA4D008E0DB6 /* Accessory */ = {
+			isa = PBXGroup;
+			children = (
+				98E5434417DDDA93008E0DB6 /* PPAccessoryView.h */,
+				98E5434517DDDA93008E0DB6 /* PPAccessoryView.m */,
+			);
+			name = Accessory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		521000EF16E484FE0036FA3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9876B27C1868E0390007D423 /* PPManagedLoadingTableViewController.h in Headers */,
+				5210010B16E497A30036FA3B /* PPToolkit.h in Headers */,
+				5210010C16E497A70036FA3B /* PPCategories.h in Headers */,
+				521000F016E4852D0036FA3B /* PPLoadingContentProtocol.h in Headers */,
+				98AD75C817F98146002F58AD /* TKState.h in Headers */,
+				521000F316E4853C0036FA3B /* PPViewController.h in Headers */,
+				521000F516E485450036FA3B /* PPTableViewController.h in Headers */,
+				98718010180EC52100BCE59B /* PPGCDTimer.h in Headers */,
+				521000FC16E485690036FA3B /* PPLoadingView.h in Headers */,
+				521000FE16E485740036FA3B /* PPTableViewCell.h in Headers */,
+				98546EB81851BECA008F127A /* NSArray+PPToolkitAdditions.h in Headers */,
+				5210010116E485A50036FA3B /* PPDrawingUtilities.h in Headers */,
+				5210010516E485C10036FA3B /* PPToolkitDefines.h in Headers */,
+				5210010716E485DD0036FA3B /* PPToolkit-Prefix.pch in Headers */,
+				9856D54318605BDC005A9F93 /* PPStateMachineViewController.h in Headers */,
+				9860F3F516E69E64000797A3 /* UIImage+PPToolkitAdditions.h in Headers */,
+				9860F3F916E6A146000797A3 /* NSBundle+PPToolkitAdditions.h in Headers */,
+				5226A99416E8784500986AE1 /* UIColor+PPToolkitAdditions.h in Headers */,
+				982B6C6716E9453200DCB343 /* NSDictionary+PPToolkitAdditions.h in Headers */,
+				98AD75C617F98146002F58AD /* TKEvent.h in Headers */,
+				98D6EF1116F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.h in Headers */,
+				98AD75A317F97F6A002F58AD /* PPKVOGroupOperation.h in Headers */,
+				98AD75CA17F98146002F58AD /* TKStateMachine.h in Headers */,
+				98D6EF2316F52C8E00F34BD4 /* PPButton.h in Headers */,
+				27FF8093180957620090B81D /* PPDelegateInterceptor.h in Headers */,
+				98D6EF2716F52E0F00F34BD4 /* PPTextField.h in Headers */,
+				98C335B0183E2916001D5F37 /* PPCoreDataStore.h in Headers */,
+				9866C0B016F66BDE00A0022A /* PPPageScrollView.h in Headers */,
+				9866C0B416F66BF900A0022A /* PPPageScrollViewCell.h in Headers */,
+				98883BD016F68C7300AA0E1D /* PPPageScrollViewProtocol.h in Headers */,
+				52CB1B3416F9FA3D00A33A1A /* PPTouchView.h in Headers */,
+				52147EB617044C3500796A3D /* PPKeyboardViewController.h in Headers */,
+				522E8C1F17057D9F00397F34 /* PPManagedObject.h in Headers */,
+				98AD759F17F97F6A002F58AD /* PPDispatchOperation.h in Headers */,
+				522E8C2317057DB600397F34 /* PPRemoteManagedObject.h in Headers */,
+				980A2A54181AA47500D030A0 /* PPObjectInterceptor.h in Headers */,
+				522666CC170ACFF100DA86C3 /* PPManagedViewController.h in Headers */,
+				27280CAD1864EC660023E69A /* PPLoadingTableViewController.h in Headers */,
+				522666D0170AD20C00DA86C3 /* PPManagedTableViewController.h in Headers */,
+				9823AEBF170F8E080064283D /* UIView+PPToolkitAdditions.h in Headers */,
+				98AD75A117F97F6A002F58AD /* PPGroupOperation.h in Headers */,
+				98FEEC741875F3F600F0F9DA /* PPSegmentedViewController.h in Headers */,
+				527CCCA5174E078E0018136A /* PPCollectionViewController.h in Headers */,
+				527CCCA9174E07AA0018136A /* PPManagedCollectionViewController.h in Headers */,
+				527CCCAE174E0AD00018136A /* PPCollectionViewCell.h in Headers */,
+				986A090F1812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.h in Headers */,
+				520C4AE8174F43AC0042D54B /* PPTableView.h in Headers */,
+				98AD75AB17F97F7B002F58AD /* PPProgressObserver.h in Headers */,
+				986008D0181720F900A0FD82 /* PPDefaultTableViewCell.h in Headers */,
+				98594EB5177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.h in Headers */,
+				9868474E1863352300DFEFAC /* PPGradientView.h in Headers */,
+				98546EB41851BE5D008F127A /* NSData+PPToolkitAdditions.h in Headers */,
+				98594EB7177F1C670080CCEA /* PSTCollectionView.h in Headers */,
+				98594EB9177F1C670080CCEA /* PSTCollectionViewCell.h in Headers */,
+				98594EBB177F1C670080CCEA /* PSTCollectionViewCommon.h in Headers */,
+				98594EBC177F1C670080CCEA /* PSTCollectionViewController.h in Headers */,
+				98594EBE177F1C670080CCEA /* PSTCollectionViewData.h in Headers */,
+				98594EC0177F1C670080CCEA /* PSTCollectionViewFlowLayout.h in Headers */,
+				98594EC2177F1C670080CCEA /* PSTCollectionViewItemKey.h in Headers */,
+				98594EC4177F1C670080CCEA /* PSTCollectionViewLayout.h in Headers */,
+				98594EC6177F1C670080CCEA /* PSTCollectionViewLayout+Internals.h in Headers */,
+				983FC3391861C74400299DF9 /* CAAnimation+PPToolkitAdditions.h in Headers */,
+				98024C5817F2F62E0047535F /* NSString+PPToolkitAdditions.h in Headers */,
+				98594EC7177F1C670080CCEA /* PSTCollectionViewUpdateItem.h in Headers */,
+				986A09131812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.h in Headers */,
+				98AD75CC17F98146002F58AD /* TransitionKit.h in Headers */,
+				98594EC9177F1C670080CCEA /* PSTGridLayoutInfo.h in Headers */,
+				98AD758D17F97F50002F58AD /* PPOperationQueue.h in Headers */,
+				98594ECB177F1C670080CCEA /* PSTGridLayoutItem.h in Headers */,
+				98594ECD177F1C670080CCEA /* PSTGridLayoutRow.h in Headers */,
+				98594ECF177F1C670080CCEA /* PSTGridLayoutSection.h in Headers */,
+				98080DFB18322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.h in Headers */,
+				986B4EBF17882FC00088AD82 /* PPTableCellBackgroundView.h in Headers */,
+				98A982C41859E93800EC8CAA /* PPSynthesizeSingleton.h in Headers */,
+				9868475218633BF800DFEFAC /* PPGradientLayer.h in Headers */,
+				9854646C188C4D2900F76523 /* FCYAssertHandler.h in Headers */,
+				986B4EC1178839360088AD82 /* PPLoadingTableViewCell.h in Headers */,
+				986B4EC517884AAF0088AD82 /* PPRightDetailTableViewCell.h in Headers */,
+				986B4EC917884ACE0088AD82 /* PPSubtitleDetailTableViewCell.h in Headers */,
+				98FEEC761875F3F600F0F9DA /* PPSwitchViewController.h in Headers */,
+				987832D217A31BD900C863DF /* UIViewController+PPToolkitExtensions.h in Headers */,
+				98AD759B17F97F6A002F58AD /* PPOperation.h in Headers */,
+				9868473B1863263400DFEFAC /* PPSemiSheetController.h in Headers */,
+				987832D717A31CBA00C863DF /* PPRuntime.h in Headers */,
+				987832DB17A31D7200C863DF /* UINavigationController+PPToolkitExtensions.h in Headers */,
+				9868473D1863263400DFEFAC /* PPSheetController.h in Headers */,
+				987832DF17A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.h in Headers */,
+				98A982BA1859E0D800EC8CAA /* PPStateMachineOperation.h in Headers */,
+				98AD75A517F97F6A002F58AD /* PPDispatchGroupOperation.h in Headers */,
+				987832E317A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.h in Headers */,
+				987832E717A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.h in Headers */,
+				98703F3A18703C6F00244A93 /* PPManagedLoadingCollectionViewController.h in Headers */,
+				98703F3618703C4700244A93 /* PPLoadingCollectionViewController.h in Headers */,
+				98AD759D17F97F6A002F58AD /* PPKVOOperation.h in Headers */,
+				986B04971802C4D600B17F36 /* PPNavigationController.h in Headers */,
+				98E5434617DDDA93008E0DB6 /* PPAccessoryView.h in Headers */,
+				9871800C180EC50100BCE59B /* PPTimer.h in Headers */,
+				9821CEE217E1A396009E6E2F /* PPLoadingCollectionViewCell.h in Headers */,
+				9854646E188C4D2900F76523 /* FCYAsserts.h in Headers */,
+				9821CEE717E1AB3A009E6E2F /* PPCollectionCellBackgroundView.h in Headers */,
+				9811516E17E852CC00E490D0 /* PPDelegateManager.h in Headers */,
+				98AD75AD17F97F7B002F58AD /* PPOperationStateMachine.h in Headers */,
+				98C335BB183E3CEE001D5F37 /* PPManagedObjectContext.h in Headers */,
+				986A09171812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.h in Headers */,
+				98A982BF1859E17F00EC8CAA /* PPCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9860F3D216E69D23000797A3 /* PPToolkitResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9860F3DD16E69D23000797A3 /* Build configuration list for PBXNativeTarget "PPToolkitResources" */;
+			buildPhases = (
+				9860F3CF16E69D23000797A3 /* Sources */,
+				9860F3D016E69D23000797A3 /* Frameworks */,
+				9860F3D116E69D23000797A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPToolkitResources;
+			productName = PPToolkitResources;
+			productReference = 9860F3D316E69D23000797A3 /* PPToolkitResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		98ABC04616E389B300ECC76B /* PPToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98ABC05516E389B400ECC76B /* Build configuration list for PBXNativeTarget "PPToolkit" */;
+			buildPhases = (
+				521000EF16E484FE0036FA3B /* Headers */,
+				98ABC04316E389B300ECC76B /* Sources */,
+				98ABC04416E389B300ECC76B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPToolkit;
+			productName = PPToolkit;
+			productReference = 98ABC04716E389B300ECC76B /* libPPToolkit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98ABC03F16E389B300ECC76B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Joachim Kret";
+			};
+			buildConfigurationList = 98ABC04216E389B300ECC76B /* Build configuration list for PBXProject "PPToolkit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				pl,
+			);
+			mainGroup = 98ABC03E16E389B300ECC76B;
+			productRefGroup = 98ABC04816E389B300ECC76B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98ABC04616E389B300ECC76B /* PPToolkit */,
+				9860F3D216E69D23000797A3 /* PPToolkitResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9860F3D116E69D23000797A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9860F3DB16E69D23000797A3 /* InfoPlist.strings in Resources */,
+				9860F3EA16E69DEA000797A3 /* blackArrow.png in Resources */,
+				9860F3EB16E69DEA000797A3 /* blackArrow@2x.png in Resources */,
+				9860F3EC16E69DEA000797A3 /* blueArrow.png in Resources */,
+				9860F3ED16E69DEA000797A3 /* blueArrow@2x.png in Resources */,
+				9860F3EE16E69DEA000797A3 /* grayArrow.png in Resources */,
+				9860F3EF16E69DEA000797A3 /* grayArrow@2x.png in Resources */,
+				9860F3F016E69DEA000797A3 /* whiteArrow.png in Resources */,
+				9860F3F116E69DEA000797A3 /* whiteArrow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9860F3CF16E69D23000797A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98ABC04316E389B300ECC76B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98ABC05C16E38C8300ECC76B /* PPViewController.m in Sources */,
+				98AD75A617F97F6A002F58AD /* PPDispatchGroupOperation.m in Sources */,
+				98ABC05F16E38CAD00ECC76B /* PPTableViewController.m in Sources */,
+				98ABC06616E3907F00ECC76B /* PPTableViewCell.m in Sources */,
+				98ABC06A16E3954B00ECC76B /* PPLoadingView.m in Sources */,
+				98ABC07016E3A09800ECC76B /* PPToolkitDefines.m in Sources */,
+				98ABC07C16E3B7BB00ECC76B /* PPDrawingUtilities.m in Sources */,
+				9868473C1863263400DFEFAC /* PPSemiSheetController.m in Sources */,
+				9860F3F616E69E64000797A3 /* UIImage+PPToolkitAdditions.m in Sources */,
+				9860F3FA16E6A146000797A3 /* NSBundle+PPToolkitAdditions.m in Sources */,
+				5226A99516E8784500986AE1 /* UIColor+PPToolkitAdditions.m in Sources */,
+				986A09141812C2A000ED3CC4 /* UIScreen+PPToolkitAdditions.m in Sources */,
+				982B6C6816E9453200DCB343 /* NSDictionary+PPToolkitAdditions.m in Sources */,
+				98D6EF1216F4BC7600F34BD4 /* UIAlertView+PPToolkitAdditions.m in Sources */,
+				98D6EF2416F52C8E00F34BD4 /* PPButton.m in Sources */,
+				98AD759E17F97F6A002F58AD /* PPKVOOperation.m in Sources */,
+				98D6EF2816F52E0F00F34BD4 /* PPTextField.m in Sources */,
+				27FF8094180957620090B81D /* PPDelegateInterceptor.m in Sources */,
+				9876B27D1868E0390007D423 /* PPManagedLoadingTableViewController.m in Sources */,
+				9866C0B116F66BDE00A0022A /* PPPageScrollView.m in Sources */,
+				9866C0B516F66BF900A0022A /* PPPageScrollViewCell.m in Sources */,
+				52CB1B3516F9FA3D00A33A1A /* PPTouchView.m in Sources */,
+				98703F3B18703C6F00244A93 /* PPManagedLoadingCollectionViewController.m in Sources */,
+				52147EB717044C3500796A3D /* PPKeyboardViewController.m in Sources */,
+				522E8C2017057D9F00397F34 /* PPManagedObject.m in Sources */,
+				98546EB51851BE5D008F127A /* NSData+PPToolkitAdditions.m in Sources */,
+				522E8C2417057DB600397F34 /* PPRemoteManagedObject.m in Sources */,
+				522666CD170ACFF100DA86C3 /* PPManagedViewController.m in Sources */,
+				98AD75C917F98146002F58AD /* TKState.m in Sources */,
+				98AD75A017F97F6A002F58AD /* PPDispatchOperation.m in Sources */,
+				98A982BB1859E0D800EC8CAA /* PPStateMachineOperation.m in Sources */,
+				522666D1170AD20C00DA86C3 /* PPManagedTableViewController.m in Sources */,
+				9823AEC0170F8E080064283D /* UIView+PPToolkitAdditions.m in Sources */,
+				983FC33A1861C74400299DF9 /* CAAnimation+PPToolkitAdditions.m in Sources */,
+				9871800D180EC50100BCE59B /* PPTimer.m in Sources */,
+				98546EB91851BECA008F127A /* NSArray+PPToolkitAdditions.m in Sources */,
+				98AD75AE17F97F7B002F58AD /* PPOperationStateMachine.m in Sources */,
+				527CCCA6174E078E0018136A /* PPCollectionViewController.m in Sources */,
+				527CCCAA174E07AA0018136A /* PPManagedCollectionViewController.m in Sources */,
+				527CCCAF174E0AD00018136A /* PPCollectionViewCell.m in Sources */,
+				986A09101812C29400ED3CC4 /* UIDevice+PPToolkitAdditions.m in Sources */,
+				98AD758E17F97F50002F58AD /* PPOperationQueue.m in Sources */,
+				98FEEC751875F3F600F0F9DA /* PPSegmentedViewController.m in Sources */,
+				9868474F1863352300DFEFAC /* PPGradientView.m in Sources */,
+				520C4AE9174F43AC0042D54B /* PPTableView.m in Sources */,
+				52410E791754C3E900BCF5C6 /* PPLoadingTableViewCell.m in Sources */,
+				986A09181812C2B300ED3CC4 /* UIApplication+PPToolkitAdditions.m in Sources */,
+				98594EB6177F1C670080CCEA /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
+				980A2A55181AA47500D030A0 /* PPObjectInterceptor.m in Sources */,
+				98594EB8177F1C670080CCEA /* PSTCollectionView.m in Sources */,
+				98594EBA177F1C670080CCEA /* PSTCollectionViewCell.m in Sources */,
+				98594EBD177F1C670080CCEA /* PSTCollectionViewController.m in Sources */,
+				98594EBF177F1C670080CCEA /* PSTCollectionViewData.m in Sources */,
+				98594EC1177F1C670080CCEA /* PSTCollectionViewFlowLayout.m in Sources */,
+				98594EC3177F1C670080CCEA /* PSTCollectionViewItemKey.m in Sources */,
+				98A982C01859E17F00EC8CAA /* PPCache.m in Sources */,
+				9868475318633BF800DFEFAC /* PPGradientLayer.m in Sources */,
+				98594EC5177F1C670080CCEA /* PSTCollectionViewLayout.m in Sources */,
+				98594EC8177F1C670080CCEA /* PSTCollectionViewUpdateItem.m in Sources */,
+				98594ECA177F1C670080CCEA /* PSTGridLayoutInfo.m in Sources */,
+				98594ECC177F1C670080CCEA /* PSTGridLayoutItem.m in Sources */,
+				98594ECE177F1C670080CCEA /* PSTGridLayoutRow.m in Sources */,
+				27280CAE1864EC660023E69A /* PPLoadingTableViewController.m in Sources */,
+				98AD75CB17F98146002F58AD /* TKStateMachine.m in Sources */,
+				98594ED0177F1C670080CCEA /* PSTGridLayoutSection.m in Sources */,
+				986B4EC017882FC00088AD82 /* PPTableCellBackgroundView.m in Sources */,
+				98703F3718703C4700244A93 /* PPLoadingCollectionViewController.m in Sources */,
+				986B4EC617884AAF0088AD82 /* PPRightDetailTableViewCell.m in Sources */,
+				9856D54418605BDC005A9F93 /* PPStateMachineViewController.m in Sources */,
+				98AD75A217F97F6A002F58AD /* PPGroupOperation.m in Sources */,
+				986B4ECA17884ACE0088AD82 /* PPSubtitleDetailTableViewCell.m in Sources */,
+				98024C5917F2F62E0047535F /* NSString+PPToolkitAdditions.m in Sources */,
+				98718011180EC52100BCE59B /* PPGCDTimer.m in Sources */,
+				987832D317A31BD900C863DF /* UIViewController+PPToolkitExtensions.m in Sources */,
+				987832D817A31CBA00C863DF /* PPRuntime.m in Sources */,
+				987832DC17A31D7200C863DF /* UINavigationController+PPToolkitExtensions.m in Sources */,
+				98AD75C717F98146002F58AD /* TKEvent.m in Sources */,
+				9868473E1863263400DFEFAC /* PPSheetController.m in Sources */,
+				987832E017A31DAF00C863DF /* UITabBarController+PPToolkitExtensions.m in Sources */,
+				986B04981802C4D600B17F36 /* PPNavigationController.m in Sources */,
+				98080DFC18322E98000783FC /* NSNotificationCenter+PPToolkitAdditions.m in Sources */,
+				987832E417A31DD400C863DF /* UIPopoverController+PPToolkitExtensions.m in Sources */,
+				987832E817A31DE800C863DF /* UISplitViewController+PPToolkitExtensions.m in Sources */,
+				98E5434717DDDA93008E0DB6 /* PPAccessoryView.m in Sources */,
+				98AD75AC17F97F7B002F58AD /* PPProgressObserver.m in Sources */,
+				9821CEE317E1A396009E6E2F /* PPLoadingCollectionViewCell.m in Sources */,
+				9821CEE817E1AB3A009E6E2F /* PPCollectionCellBackgroundView.m in Sources */,
+				9811516F17E852CC00E490D0 /* PPDelegateManager.m in Sources */,
+				98C335B1183E2916001D5F37 /* PPCoreDataStore.m in Sources */,
+				98AD75A417F97F6A002F58AD /* PPKVOGroupOperation.m in Sources */,
+				98FEEC771875F3F600F0F9DA /* PPSwitchViewController.m in Sources */,
+				986008D1181720F900A0FD82 /* PPDefaultTableViewCell.m in Sources */,
+				98C335BC183E3CEE001D5F37 /* PPManagedObjectContext.m in Sources */,
+				98AD759C17F97F6A002F58AD /* PPOperation.m in Sources */,
+				9854646D188C4D2900F76523 /* FCYAssertHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9860F3D916E69D23000797A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52941AE116FB474A0068D4D6 /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9860F3DE16E69D23000797A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPToolkitResources/PPToolkitResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "PPToolkitResources/PPToolkitResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9860F3DF16E69D23000797A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPToolkitResources/PPToolkitResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "PPToolkitResources/PPToolkitResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		98ABC05316E389B400ECC76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		98ABC05416E389B400ECC76B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98ABC05616E389B400ECC76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PPToolkit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPToolkit/PPToolkit-Prefix.pch";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		98ABC05716E389B400ECC76B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PPToolkit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPToolkit/PPToolkit-Prefix.pch";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9860F3DD16E69D23000797A3 /* Build configuration list for PBXNativeTarget "PPToolkitResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9860F3DE16E69D23000797A3 /* Debug */,
+				9860F3DF16E69D23000797A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98ABC04216E389B300ECC76B /* Build configuration list for PBXProject "PPToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98ABC05316E389B400ECC76B /* Debug */,
+				98ABC05416E389B400ECC76B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98ABC05516E389B400ECC76B /* Build configuration list for PBXNativeTarget "PPToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98ABC05616E389B400ECC76B /* Debug */,
+				98ABC05716E389B400ECC76B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98ABC03F16E389B300ECC76B /* Project object */;
+}
